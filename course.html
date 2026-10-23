@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#7E1C45" />
+
+  <title>Курс «Фигуры речи» — Натали Мадам | Гипербола, литота и другие тропы</title>
+  <meta name="description" content="Авторский курс «Фигуры речи» для писателей, преподавателей и ораторов. Гипербола, литота, психология тропа, формула создания, кладбище штампов и интерактивный тренажёр «Корабль Слово»." />
+  <meta name="keywords" content="курс фигуры речи, гипербола, литота, тропы, стилистика, писательское мастерство, Натали Мадам, тренажёр" />
+  <meta name="author" content="Натали Мадам" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <link rel="canonical" href="https://nataly-madam.ru/course.html" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="ru_RU" />
+  <meta property="og:site_name" content="Натали Мадам" />
+  <meta property="og:title" content="Курс «Фигуры речи» — Натали Мадам" />
+  <meta property="og:description" content="Уникальный курс для тех, кто работает со словом: гипербола, литота, психология тропа, формула создания, тренажёр." />
+  <meta property="og:url" content="https://nataly-madam.ru/course.html" />
+  <meta property="og:image" content="https://nataly-madam.ru/author.jpg" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Курс «Фигуры речи» — Натали Мадам" />
+  <meta name="twitter:description" content="Уникальный курс для тех, кто работает со словом." />
+  <meta name="twitter:image" content="https://nataly-madam.ru/author.jpg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Marck+Script&family=Caveat:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,700;0,800;1,400&display=swap" rel="stylesheet">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Course",
+    "name": "Фигуры речи",
+    "description": "Авторский курс Натали Мадам о гиперболе, литоте и других фигурах речи как инструменте воздействия на читателя.",
+    "inLanguage": "ru-RU",
+    "provider": {
+      "@type": "Person",
+      "name": "Натали Мадам",
+      "url": "https://nataly-madam.ru/"
+    },
+    "url": "https://nataly-madam.ru/course.html",
+    "hasCourseInstance": [
+      {"@type": "CourseInstance", "courseMode": "online", "name": "Модуль 1. Кладбище штампов"},
+      {"@type": "CourseInstance", "courseMode": "online", "name": "Модуль 2. Психология тропа"},
+      {"@type": "CourseInstance", "courseMode": "online", "name": "Модуль 3. Формула создания"},
+      {"@type": "CourseInstance", "courseMode": "online", "name": "Модуль 4. Тропы"},
+      {"@type": "CourseInstance", "courseMode": "online", "name": "Модуль 5. Фигуры"}
+    ]
+  }
+  </script>
+
+  <style>
+    :root{
+      --rose:#A6295B;
+      --rose-deep:#7E1C45;
+      --rose-soft:#F3DCE6;
+      --cherry:#5C0A1E;
+      --cherry-deep:#3A0512;
+      --gold:#C9A227;
+      --gold-light:#E8C766;
+      --cream:#FBF7F2;
+      --ink:#2B2230;
+      --serif:'Playfair Display','Didot','Bodoni MT',Georgia,'Times New Roman',serif;
+      --script:'Marck Script','Caveat','Georgia',cursive;
+      --sans:'Avenir Next','Segoe UI',system-ui,-apple-system,sans-serif;
+    }
+    *{margin:0;padding:0;box-sizing:border-box}
+    body{background:var(--cream);color:var(--ink);font-family:var(--sans);line-height:1.6;overflow-x:hidden}
+
+    /* ── HEADER (как на главной) ── */
+    header{position:sticky;top:0;z-index:50;background:rgba(251,247,242,.92);backdrop-filter:blur(10px);border-bottom:1px solid rgba(166,41,91,.15)}
+    .header-inner{max-width:1180px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:18px 28px}
+    .logo{text-decoration:none;display:flex;flex-direction:column;align-items:flex-start;gap:2px}
+    .logo-script{font-family:var(--script);font-size:1.9rem;line-height:1;color:var(--rose-deep);letter-spacing:.02em}
+    .logo-sub{font-family:var(--sans);font-size:.6rem;letter-spacing:.4em;text-transform:uppercase;color:rgba(126,28,69,.6);padding-left:.15em}
+    nav ul{display:flex;gap:24px;list-style:none}
+    nav a{text-decoration:none;color:var(--ink);font-size:.76rem;letter-spacing:.18em;text-transform:uppercase;font-weight:600;position:relative;padding:6px 0;transition:color .25s;white-space:nowrap}
+    nav a::after{content:'';position:absolute;left:50%;bottom:0;width:0;height:2px;background:linear-gradient(90deg,var(--gold),var(--rose));transition:all .3s;transform:translateX(-50%)}
+    nav a:hover{color:var(--rose)}
+    nav a:hover::after{width:100%}
+    nav a.nav-course{color:var(--rose-deep)}
+    nav a.nav-course::before{content:'✦';margin-right:6px;color:var(--gold);font-size:.7rem;vertical-align:middle}
+    .burger{display:none;background:none;border:none;cursor:pointer;padding:6px}
+    .burger span{display:block;width:26px;height:2px;background:var(--rose-deep);margin:6px 0;border-radius:2px;transition:.3s}
+
+    /* ── HERO КУРСА ── */
+    .course-hero{
+      position:relative;
+      padding:100px 28px 130px;
+      background:
+        radial-gradient(ellipse at 20% 15%, rgba(166,41,91,.14) 0%, transparent 55%),
+        radial-gradient(ellipse at 85% 85%, rgba(201,162,39,.12) 0%, transparent 55%),
+        linear-gradient(160deg, #FBF7F2 0%, #F7EFE6 55%, #F2E4D5 100%);
+      overflow:hidden;
+      text-align:center;
+    }
+    .course-hero__bg{position:absolute;inset:0;overflow:hidden;pointer-events:none}
+    .course-hero__bg svg{position:absolute}
+    .course-hero__inner{position:relative;max-width:900px;margin:0 auto;z-index:2}
+
+    .course-badge{
+      display:inline-flex;
+      align-items:center;
+      gap:10px;
+      font-size:.72rem;
+      letter-spacing:.36em;
+      text-transform:uppercase;
+      color:var(--rose);
+      font-weight:700;
+      margin-bottom:26px;
+      padding:8px 18px;
+      border:1px solid rgba(166,41,91,.3);
+      border-radius:999px;
+      background:rgba(255,255,255,.55);
+      backdrop-filter:blur(6px);
+    }
+    .course-badge::before{content:'✦';color:var(--gold)}
+
+    .course-hero h1{
+      font-family:var(--serif);
+      font-size:clamp(2.6rem,6vw,5rem);
+      line-height:1.05;
+      font-weight:800;
+      color:var(--ink);
+      margin-bottom:18px;
+      letter-spacing:.01em;
+    }
+    .course-hero h1 em{
+      font-style:italic;
+      font-weight:500;
+      display:block;
+      background:linear-gradient(120deg, var(--rose-deep) 0%, var(--rose) 100%);
+      -webkit-background-clip:text;
+      background-clip:text;
+      -webkit-text-fill-color:transparent;
+    }
+    .course-hero__lead{
+      font-family:var(--serif);
+      font-style:italic;
+      font-size:clamp(1.05rem,1.9vw,1.35rem);
+      line-height:1.7;
+      color:#3a2a30;
+      max-width:640px;
+      margin:0 auto 42px;
+    }
+
+    .course-cta{
+      display:flex;
+      flex-wrap:wrap;
+      gap:16px;
+      justify-content:center;
+    }
+    .btn-primary{
+      display:inline-block;
+      text-decoration:none;
+      font-size:.78rem;
+      letter-spacing:.22em;
+      text-transform:uppercase;
+      font-weight:700;
+      padding:18px 40px;
+      border-radius:999px;
+      background:linear-gradient(135deg,var(--rose) 0%,var(--rose-deep) 100%);
+      color:#fff;
+      box-shadow:0 16px 32px -12px rgba(126,28,69,.5);
+      transition:.3s;
+    }
+    .btn-primary:hover{transform:translateY(-3px);box-shadow:0 22px 40px -12px rgba(126,28,69,.6)}
+    .btn-ghost{
+      display:inline-block;
+      text-decoration:none;
+      font-size:.78rem;
+      letter-spacing:.22em;
+      text-transform:uppercase;
+      font-weight:700;
+      padding:18px 40px;
+      border-radius:999px;
+      background:transparent;
+      color:var(--rose-deep);
+      border:1.5px solid rgba(166,41,91,.4);
+      transition:.3s;
+    }
+    .btn-ghost:hover{background:rgba(166,41,91,.08);border-color:var(--rose);transform:translateY(-3px)}
+
+    .wave{display:block;width:100%;height:90px;margin-top:-90px;position:relative;z-index:2}
+
+    /* ── ОБЩИЕ БЛОКИ ── */
+    .section{padding:100px 28px;position:relative}
+    .section--alt{background:#fff}
+    .section-inner{max-width:1100px;margin:0 auto;position:relative;z-index:2}
+    .section-head{text-align:center;margin-bottom:60px;display:flex;flex-direction:column;align-items:center;gap:14px}
+    .section-label{
+      display:inline-flex;align-items:center;gap:12px;
+      font-size:.72rem;letter-spacing:.34em;text-transform:uppercase;
+      color:var(--rose);font-weight:700;
+    }
+    .section-label::before,.section-label::after{
+      content:'';width:36px;height:1px;background:linear-gradient(90deg,transparent,var(--gold));
+    }
+    .section-label::after{background:linear-gradient(90deg,var(--gold),transparent)}
+    .section-title{
+      font-family:var(--script);
+      font-size:clamp(2.2rem,4.8vw,3.6rem);
+      font-weight:700;
+      color:var(--rose-deep);
+      line-height:1.1;
+      letter-spacing:.02em;
+      text-shadow:0 2px 12px rgba(166,41,91,.12);
+    }
+    .section-sub{
+      font-size:1rem;
+      line-height:1.8;
+      color:#5a4a55;
+      max-width:60ch;
+    }
+
+    /* ── ДЛЯ КОГО ── */
+    .audience-grid{
+      display:grid;
+      grid-template-columns:repeat(4,1fr);
+      gap:22px;
+    }
+    .audience-card{
+      background:#fff;
+      border-radius:20px;
+      padding:32px 24px;
+      box-shadow:0 16px 40px -22px rgba(126,28,69,.35), 0 0 0 1px rgba(166,41,91,.08) inset;
+      transition:transform .35s ease, box-shadow .35s ease;
+    }
+    .audience-card:hover{
+      transform:translateY(-6px);
+      box-shadow:0 28px 50px -22px rgba(126,28,69,.5), 0 0 0 1px rgba(166,41,91,.16) inset;
+    }
+    .audience-card__icon{
+      font-size:2rem;
+      line-height:1;
+      margin-bottom:16px;
+      display:block;
+    }
+    .audience-card__title{
+      font-family:var(--serif);
+      font-size:1.2rem;
+      font-weight:700;
+      color:var(--rose-deep);
+      margin-bottom:10px;
+    }
+    .audience-card__text{
+      font-size:.92rem;
+      line-height:1.7;
+      color:#5a4a55;
+    }
+
+    /* ── ЧЕМУ НАУЧИТЕСЬ ── */
+    .skills-list{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:18px 40px;
+      list-style:none;
+    }
+    .skills-list li{
+      position:relative;
+      padding-left:36px;
+      font-size:1rem;
+      line-height:1.7;
+      color:#3a2a30;
+    }
+    .skills-list li::before{
+      content:'✓';
+      position:absolute;
+      left:0;top:0;
+      width:24px;height:24px;
+      border-radius:50%;
+      background:linear-gradient(135deg,var(--rose),var(--rose-deep));
+      color:#fff;
+      font-size:.75rem;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-weight:700;
+    }
+
+    /* ── ПРОГРАММА ── */
+    .modules{display:flex;flex-direction:column;gap:24px}
+    .module{
+      display:grid;
+      grid-template-columns:90px 1fr;
+      gap:24px;
+      background:#fff;
+      border-radius:22px;
+      padding:32px 32px 32px 24px;
+      box-shadow:0 16px 40px -22px rgba(126,28,69,.35), 0 0 0 1px rgba(166,41,91,.08) inset;
+      transition:transform .3s ease;
+    }
+    .module:hover{transform:translateX(4px)}
+    .module__num{
+      font-family:var(--serif);
+      font-size:2.6rem;
+      font-weight:800;
+      line-height:1;
+      background:linear-gradient(135deg,var(--rose-deep) 10%, var(--rose) 90%);
+      -webkit-background-clip:text;
+      background-clip:text;
+      -webkit-text-fill-color:transparent;
+      text-align:center;
+      padding-top:4px;
+    }
+    .module__title{
+      font-family:var(--serif);
+      font-size:1.35rem;
+      font-weight:700;
+      color:var(--rose-deep);
+      margin-bottom:8px;
+    }
+    .module__text{
+      font-size:.95rem;
+      line-height:1.75;
+      color:#5a4a55;
+    }
+
+    /* ── КАК УСТРОЕН ── */
+    .steps{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:24px;
+    }
+    .step{
+      position:relative;
+      background:linear-gradient(160deg,#fff 0%,#FBF3F7 100%);
+      border-radius:22px;
+      padding:36px 28px;
+      box-shadow:0 16px 40px -22px rgba(126,28,69,.35), 0 0 0 1px rgba(166,41,91,.08) inset;
+      text-align:center;
+    }
+    .step__num{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      width:48px;
+      height:48px;
+      border-radius:50%;
+      background:linear-gradient(135deg,var(--rose),var(--rose-deep));
+      color:#fff;
+      font-family:var(--serif);
+      font-weight:800;
+      font-size:1.3rem;
+      margin-bottom:18px;
+      box-shadow:0 8px 20px -8px rgba(126,28,69,.6);
+    }
+    .step__title{
+      font-family:var(--serif);
+      font-size:1.2rem;
+      font-weight:700;
+      color:var(--rose-deep);
+      margin-bottom:10px;
+    }
+    .step__text{
+      font-size:.92rem;
+      line-height:1.7;
+      color:#5a4a55;
+    }
+
+    /* ── ФИНАЛЬНЫЙ CTA ── */
+    .final-cta{
+      position:relative;
+      padding:110px 28px;
+      background:
+        radial-gradient(ellipse at 50% 0%, rgba(166,41,91,.18) 0%, transparent 60%),
+        linear-gradient(160deg,#3A0512 0%, #5C0A1E 60%, #7E1C45 100%);
+      text-align:center;
+      overflow:hidden;
+    }
+    .final-cta__inner{position:relative;max-width:760px;margin:0 auto;z-index:2;color:#fff}
+    .final-cta h2{
+      font-family:var(--serif);
+      font-size:clamp(2rem,4.5vw,3.2rem);
+      font-weight:800;
+      line-height:1.15;
+      margin-bottom:18px;
+      color:#fff;
+    }
+    .final-cta h2 em{
+      font-style:italic;
+      font-weight:500;
+      color:var(--gold-light);
+    }
+    .final-cta p{
+      font-family:var(--serif);
+      font-style:italic;
+      font-size:clamp(1.05rem,1.8vw,1.25rem);
+      line-height:1.7;
+      color:rgba(255,255,255,.9);
+      max-width:52ch;
+      margin:0 auto 40px;
+    }
+    .btn-gold{
+      display:inline-block;
+      text-decoration:none;
+      font-size:.78rem;
+      letter-spacing:.24em;
+      text-transform:uppercase;
+      font-weight:700;
+      padding:20px 46px;
+      border-radius:999px;
+      background:linear-gradient(135deg,var(--gold-light) 0%, var(--gold) 100%);
+      color:var(--cherry-deep);
+      box-shadow:0 16px 36px -12px rgba(201,162,39,.55);
+      transition:.3s;
+    }
+    .btn-gold:hover{transform:translateY(-3px);box-shadow:0 24px 48px -14px rgba(201,162,39,.7)}
+    .btn-outline-light{
+      display:inline-block;
+      text-decoration:none;
+      font-size:.78rem;
+      letter-spacing:.24em;
+      text-transform:uppercase;
+      font-weight:700;
+      padding:20px 46px;
+      border-radius:999px;
+      background:transparent;
+      color:#fff;
+      border:1.5px solid rgba(243,220,230,.55);
+      margin-left:14px;
+      transition:.3s;
+    }
+    .btn-outline-light:hover{background:rgba(243,220,230,.12);border-color:var(--rose-soft);transform:translateY(-3px)}
+    .final-cta__buttons{display:flex;flex-wrap:wrap;gap:14px;justify-content:center}
+
+    /* ── FOOTER ── */
+    footer{background:var(--rose-deep);color:#F3DCE6;padding:48px 28px 32px;text-align:center}
+    .footer-inner{max-width:1180px;margin:0 auto}
+    .footer-logo{font-family:var(--script);font-size:1.8rem;color:#F3DCE6;text-decoration:none;display:block;margin-bottom:12px}
+    .footer-copy{font-size:.75rem;letter-spacing:.18em;text-transform:uppercase;opacity:.75;line-height:1.8}
+    .footer-legal{
+      display:flex;flex-wrap:wrap;justify-content:center;gap:8px 20px;
+      margin-top:20px;padding-top:20px;
+      border-top:1px solid rgba(243,220,230,.15);
+    }
+    .footer-legal a{
+      font-family:var(--sans);font-size:.7rem;letter-spacing:.16em;
+      text-transform:uppercase;color:rgba(243,220,230,.6);
+      text-decoration:none;transition:color .25s;
+    }
+    .footer-legal a:hover{color:#F3DCE6;}
+
+    /* ── КНОПКА «НАВЕРХ» ── */
+    .to-top{
+      position:fixed;left:24px;bottom:24px;
+      width:56px;height:56px;border-radius:50%;
+      background:linear-gradient(135deg,var(--cherry) 0%,var(--cherry-deep) 100%);
+      color:var(--gold-light);border:none;cursor:pointer;
+      display:flex;align-items:center;justify-content:center;
+      z-index:900;opacity:0;pointer-events:none;transform:translateY(12px);
+      transition:opacity .35s ease, transform .35s ease, box-shadow .3s ease, background .3s ease;
+      box-shadow:0 8px 24px -10px rgba(58,5,18,.6), inset 0 1px 0 rgba(255,255,255,.15);
+    }
+    .to-top.is-visible{opacity:1;pointer-events:auto;transform:translateY(0)}
+    .to-top:hover{
+      background:linear-gradient(135deg,var(--cherry-deep) 0%,var(--cherry) 100%);
+      box-shadow:0 14px 32px -10px rgba(58,5,18,.8), inset 0 1px 0 rgba(255,255,255,.2);
+      transform:translateY(-3px);
+    }
+    .to-top svg{
+      width:26px;height:26px;
+      stroke:var(--gold-light);stroke-width:1.5;
+      stroke-linecap:round;stroke-linejoin:round;fill:none;
+      filter:drop-shadow(0 0 4px rgba(232,199,102,.4));
+    }
+    .to-top:hover svg{filter:drop-shadow(0 0 8px rgba(232,199,102,.7))}
+
+    /* ── RESPONSIVE ── */
+    @media(max-width:1100px){
+      nav ul{gap:18px}
+      nav a{font-size:.7rem;letter-spacing:.14em}
+    }
+    @media(max-width:920px){
+      .audience-grid{grid-template-columns:repeat(2,1fr)}
+      .steps{grid-template-columns:1fr}
+      .module{grid-template-columns:70px 1fr;padding:28px 24px}
+      .module__num{font-size:2.2rem}
+      nav ul{position:fixed;top:66px;right:0;flex-direction:column;background:#fff;width:min(300px,80vw);height:calc(100vh - 66px);padding:36px;gap:26px;transform:translateX(100%);transition:.35s;box-shadow:-20px 0 40px rgba(126,28,69,.15)}
+      nav ul.open{transform:translateX(0)}
+      .burger{display:block}
+    }
+    @media(max-width:640px){
+      .course-hero{padding:60px 20px 110px}
+      .section{padding:70px 20px}
+      .audience-grid{grid-template-columns:1fr}
+      .skills-list{grid-template-columns:1fr}
+      .module{grid-template-columns:1fr;gap:12px;padding:26px 22px}
+      .module__num{text-align:left}
+      .btn-primary,.btn-ghost{padding:16px 32px;font-size:.72rem}
+      .final-cta{padding:80px 20px}
+      .btn-gold,.btn-outline-light{padding:18px 36px;font-size:.72rem}
+      .btn-outline-light{margin-left:0}
+      .to-top{width:48px;height:48px;left:16px;bottom:16px}
+      .to-top svg{width:22px;height:22px}
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ============ ШАПКА ============ -->
+  <header>
+    <div class="header-inner">
+      <a class="logo" href="index.html" aria-label="Натали Мадам — на главную">
+        <span class="logo-script">nataly-madam.ru</span>
+        <span class="logo-sub">Последний романтик</span>
+      </a>
+      <button class="burger" aria-label="Открыть меню" aria-expanded="false" onclick="document.getElementById('menu').classList.toggle('open')">
+        <span></span><span></span><span></span>
+      </button>
+      <nav aria-label="Основная навигация">
+        <ul id="menu">
+          <li><a href="index.html#about">Персона</a></li>
+          <li><a href="index.html#books">Альков</a></li>
+          <li><a href="index.html#thoughts">Будуар</a></li>
+          <li><a href="index.html#articles">Шпилька</a></li>
+          <li><a href="index.html#reticule">Ридикюль</a></li>
+          <li><a href="course.html" class="nav-course">Курс</a></li>
+          <li><a href="index.html#contacts">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ============ HERO КУРСА ============ -->
+  <section class="course-hero" aria-label="Курс «Фигуры речи»">
+    <div class="course-hero__bg" aria-hidden="true">
+      <svg style="top:-120px;right:-120px" width="520" height="520" viewBox="0 0 520 520" fill="none">
+        <circle cx="260" cy="260" r="250" stroke="#7E1C45" stroke-width="1.5" stroke-opacity=".3"/>
+        <circle cx="260" cy="260" r="190" stroke="#A6295B" stroke-width="1" stroke-opacity=".25"/>
+        <circle cx="260" cy="260" r="130" fill="#F3DCE6" fill-opacity=".4"/>
+      </svg>
+      <svg style="bottom:-140px;left:-140px" width="480" height="480" viewBox="0 0 480 480" fill="none">
+        <circle cx="240" cy="240" r="230" stroke="#7E1C45" stroke-width="1.5" stroke-opacity=".28"/>
+        <circle cx="240" cy="240" r="160" stroke="#C9A227" stroke-width="1" stroke-opacity=".3"/>
+        <circle cx="240" cy="240" r="100" fill="#FBF3DC" fill-opacity=".6"/>
+      </svg>
+    </div>
+
+    <div class="course-hero__inner">
+      <span class="course-badge">Уникальный курс для тех, кто работает со словом</span>
+      <h1>Фигуры<em>речи</em></h1>
+      <p class="course-hero__lead">
+        Гипербола, литота и другие тропы — не украшение, а инструмент воздействия
+        на читателя. Курс учит использовать их так, чтобы они работали на сюжет,
+        идею и персонажа.
+      </p>
+      <div class="course-cta">
+        <a href="trener.html" class="btn-primary">Начать тренажёр</a>
+        <a href="#program" class="btn-ghost">К программе</a>
+      </div>
+    </div>
+  </section>
+
+  <svg class="wave" viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true">
+    <path d="M0,50 C240,95 480,0 720,40 C960,80 1200,10 1440,50 L1440,90 L0,90 Z" fill="#ffffff"/>
+    <path d="M0,58 C240,100 480,8 720,48 C960,88 1200,18 1440,58" stroke="#C9A227" stroke-opacity=".45" stroke-width="1.5" fill="none"/>
+  </svg>
+
+  <!-- ============ ДЛЯ КОГО ============ -->
+  <section class="section section--alt" aria-labelledby="audience-title">
+    <div class="section-inner">
+      <div class="section-head">
+        <span class="section-label">Для кого</span>
+        <h2 class="section-title" id="audience-title">Кому будет полезно</h2>
+        <p class="section-sub">Курс рассчитан на всех, кто работает со словом — от начинающих авторов до преподавателей.</p>
+      </div>
+
+      <div class="audience-grid">
+        <div class="audience-card">
+          <span class="audience-card__icon">✍️</span>
+          <h3 class="audience-card__title">Писателям</h3>
+          <p class="audience-card__text">Научитесь использовать тропы как инструмент: усиливать сцены, создавать атмосферу, лепить характер героя.</p>
+        </div>
+        <div class="audience-card">
+          <span class="audience-card__icon">🎓</span>
+          <h3 class="audience-card__title">Школьникам и студентам</h3>
+          <p class="audience-card__text">Разберётесь в фигурах речи для сочинений, ЕГЭ и творческих работ — без зубрёжки, через понимание.</p>
+        </div>
+        <div class="audience-card">
+          <span class="audience-card__icon">🎤</span>
+          <h3 class="audience-card__title">Ораторам</h3>
+          <p class="audience-card__text">Узнаете, как гипербола и литота управляют вниманием и эмоцией слушателя — и где проходит граница манипуляции.</p>
+        </div>
+        <div class="audience-card">
+          <span class="audience-card__icon">📚</span>
+          <h3 class="audience-card__title">Преподавателям</h3>
+          <p class="audience-card__text">Получите готовые блоки теории и интерактивный тренажёр для уроков русского языка и литературы.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ЧЕМУ НАУЧИТЕСЬ ============ -->
+  <section class="section" aria-labelledby="skills-title">
+    <div class="section-inner">
+      <div class="section-head">
+        <span class="section-label">Результат</span>
+        <h2 class="section-title" id="skills-title">Чему вы научитесь</h2>
+      </div>
+      <ul class="skills-list">
+        <li>Видеть тропы в чужих текстах и понимать, зачем они там.</li>
+        <li>Придумывать свои гиперболы и литоты по формуле «чувство → масштаб → образ».</li>
+        <li>Отличать живые фигуры речи от мёртвых штампов.</li>
+        <li>Использовать тропы как психологический инструмент, а не как украшение.</li>
+        <li>Понимать, где троп усиливает сцену, а где превращается в манипуляцию.</li>
+        <li>Проверять свои тексты чек-листом «троп работает на историю».</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ ПРОГРАММА ============ -->
+  <section class="section section--alt" id="program" aria-labelledby="program-title">
+    <div class="section-inner">
+      <div class="section-head">
+        <span class="section-label">Программа</span>
+        <h2 class="section-title" id="program-title">Пять модулей</h2>
+        <p class="section-sub">Каждый модуль — короткая теория и практика. Тренажёр «Корабль Слово» встроен в курс как игровая проверка.</p>
+      </div>
+
+      <div class="modules">
+        <article class="module">
+          <div class="module__num">01</div>
+          <div>
+            <h3 class="module__title">Кладбище штампов</h3>
+            <p class="module__text">Разбираем самые уставшие гиперболы и литоты («море слёз», «с гулькин нос») и учимся заменять их живыми образами, вырастающими из конкретной сцены.</p>
+          </div>
+        </article>
+
+        <article class="module">
+          <div class="module__num">02</div>
+          <div>
+            <h3 class="module__title">Психология тропа</h3>
+            <p class="module__text">Как гипербола и литота работают на слушателя: убеждение, манипуляция, эмоция, чувство. Таблица «приём → эффект → риск» и разбор пограничных случаев.</p>
+          </div>
+        </article>
+
+        <article class="module">
+          <div class="module__num">03</div>
+          <div>
+            <h3 class="module__title">Формула создания</h3>
+            <p class="module__text">Пошаговый алгоритм: от чувства героя — к масштабу — к телесному образу — к проверке. Плюс чек-лист «троп на службе истории».</p>
+          </div>
+        </article>
+
+        <article class="module">
+          <div class="module__num">04</div>
+          <div>
+            <h3 class="module__title">Тропы</h3>
+            <p class="module__text">Метафора, метонимия, синекдоха, олицетворение, эпитет, ирония, оксюморон — как они устроены и когда работают сильнее гиперболы.</p>
+          </div>
+        </article>
+
+        <article class="module">
+          <div class="module__num">05</div>
+          <div>
+            <h3 class="module__title">Фигуры</h3>
+            <p class="module__text">Анафора, антитеза, градация, хиазм, умолчание — как структура фразы управляет вниманием читателя и темпом сцены.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ КАК УСТРОЕН ============ -->
+  <section class="section" aria-labelledby="how-title">
+    <div class="section-inner">
+      <div class="section-head">
+        <span class="section-label">Формат</span>
+        <h2 class="section-title" id="how-title">Как устроен курс</h2>
+      </div>
+
+      <div class="steps">
+        <div class="step">
+          <span class="step__num">1</span>
+          <h3 class="step__title">Теория</h3>
+          <p class="step__text">Короткие блоки с примерами: что делает троп, на что влияет, чего избегать.</p>
+        </div>
+        <div class="step">
+          <span class="step__num">2</span>
+          <h3 class="step__title">Тренажёр</h3>
+          <p class="step__text">Игра «Корабль Слово»: 12 фраз из четырёх жанров, где нужно определить фигуру речи.</p>
+        </div>
+        <div class="step">
+          <span class="step__num">3</span>
+          <h3 class="step__title">Практика</h3>
+          <p class="step__text">Собственные тексты: придумать, проверить по чек-листу, переписать штампы в живые образы.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ФИНАЛЬНЫЙ CTA ============ -->
+  <section class="final-cta" aria-label="Начать курс">
+    <div class="final-cta__inner">
+      <h2>Готовы <em>начать</em>?</h2>
+      <p>Откройте тренажёр «Корабль Слово» — 12 ящиков с фразами из четырёх жанров ждут своего капитана.</p>
+      <div class="final-cta__buttons">
+        <a href="trener.html" class="btn-gold">Открыть тренажёр</a>
+        <a href="index.html#contacts" class="btn-outline-light">Написать автору</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ПОДВАЛ ============ -->
+  <footer>
+    <div class="footer-inner">
+      <a href="index.html" class="footer-logo" aria-label="nataly-madam.ru — на главную">nataly-madam.ru</a>
+      <p class="footer-copy">
+        Натали Мадам — персональный сайт писательницы<br>
+        © 2026. Все права защищены
+      </p>
+      <div class="footer-legal">
+        <a href="#">Политика конфиденциальности</a>
+        <a href="#">Согласие на обработку данных</a>
+        <a href="#">Пользовательское соглашение</a>
+        <a href="#">Публичная оферта</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============ КНОПКА «НАВЕРХ» ============ -->
+  <button class="to-top" id="toTop" aria-label="Наверх" type="button">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <path d="M12 19V5"/>
+      <path d="M5 12l7-7 7 7"/>
+    </svg>
+  </button>
+
+  <script>
+    /* Меню-бургер */
+    document.querySelectorAll('#menu a').forEach(function(a){
+      a.addEventListener('click', function(){
+        document.getElementById('menu').classList.remove('open');
+      });
+    });
+
+    /* Кнопка «Наверх» */
+    (function(){
+      var btn = document.getElementById('toTop');
+      if (!btn) return;
+      function checkScroll(){
+        if (window.scrollY > 400) btn.classList.add('is-visible');
+        else btn.classList.remove('is-visible');
+      }
+      window.addEventListener('scroll', checkScroll, { passive: true });
+      checkScroll();
+      btn.addEventListener('click', function(){
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+    })();
+  </script>
+</body>
+</html>
