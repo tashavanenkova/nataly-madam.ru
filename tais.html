@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Секреты Древнегреческих Мистерий — Натали Мадам</title>
+    <style>
+        :root {
+            --ink: #0d1a21;
+            --ink-2: #122630;
+            --sea: #1f5260;
+            --sky: #b8d8e3;
+            --sky-light: #e2f0f5;
+            --pistachio: #c8d8b8;
+            --pistachio-light: #eaf0e4;
+            --gold: #c9a35c;
+            --gold-light: #e3c98f;
+            --terracotta: #c97b5c;
+            --cream: #f9f7f2;
+            --cream-2: #f0ece4;
+            --text-dark: #22333b;
+            --radius: 24px;
+            --shadow: 0 20px 50px rgba(34, 51, 59, 0.08);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body {
+            font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+            color: var(--text-dark);
+            background: var(--cream);
+            line-height: 1.7;
+            font-size: 17px;
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, .serif {
+            font-family: Georgia, 'Times New Roman', serif;
+            font-weight: 400;
+            letter-spacing: 0.01em;
+        }
+
+        img, svg { max-width: 100%; display: block; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+        section { padding: 120px 0; position: relative; }
+
+        .eyebrow {
+            display: inline-block;
+            font-size: 12px;
+            letter-spacing: 0.32em;
+            text-transform: uppercase;
+            color: var(--gold);
+            margin-bottom: 18px;
+        }
+
+        .h2 {
+            font-size: clamp(28px, 4vw, 44px);
+            line-height: 1.2;
+            margin-bottom: 24px;
+            color: var(--ink);
+        }
+
+        .lead {
+            font-size: clamp(17px, 2vw, 20px);
+            color: #4a5a62;
+            max-width: 720px;
+        }
+
+        .rule {
+            width: 64px;
+            height: 2px;
+            background: var(--gold);
+            margin: 0 0 28px;
+        }
+
+        .center { text-align: center; }
+        .center .rule { margin: 0 auto 28px; }
+
+        /* ===== ВОЛНА-РАЗДЕЛИТЕЛЬ ===== */
+        .wave-divider {
+            display: block;
+            width: 100%;
+            height: 90px;
+            margin: -1px 0;
+            position: relative;
+            z-index: 2;
+        }
+
+        /* ===== ШАПКА ===== */
+        header {
+            position: fixed;
+            top: 0; left: 0; right: 0;
+            z-index: 100;
+            background: rgba(13, 26, 33, 0.92);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(201, 163, 92, 0.2);
+        }
+        .nav { display: flex; align-items: center; justify-content: space-between; height: 72px; }
+        .logo { font-family: Georgia, serif; color: var(--cream); font-size: 20px; letter-spacing: 0.14em; text-transform: uppercase; text-decoration: none; }
+        .logo span { color: var(--gold); }
+        .menu { display: flex; gap: 32px; list-style: none; }
+        .menu a { color: #cfd9dd; text-decoration: none; font-size: 13px; letter-spacing: 0.12em; text-transform: uppercase; padding: 6px 0; border-bottom: 1px solid transparent; transition: 0.3s; }
+        .menu a:hover { color: var(--gold-light); border-color: var(--gold); }
+        .btn-nav { padding: 10px 24px; border-radius: 999px; background: var(--gold); color: var(--ink); text-decoration: none; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; font-weight: 600; transition: 0.3s; }
+        .btn-nav:hover { background: var(--gold-light); }
+        .burger { display: none; background: none; border: none; cursor: pointer; padding: 8px; }
+        .burger span { display: block; width: 26px; height: 2px; background: var(--cream); margin: 6px 0; }
+
+        /* ===== HERO ===== */
+        .hero {
+            height: 100vh;
+            min-height: 700px;
+            position: relative;
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+            padding: 0;
+                    }
+        .hero-bg { position: absolute; inset: 0; z-index: 0; }
+        .hero-bg img { width: 100%; height: 100%; object-fit: cover; }
+        .hero-overlay {
+            position: absolute;
+            inset: 0;
+            z-index: 1;
+            background: linear-gradient(90deg, rgba(13,26,33,0.92) 0%, rgba(13,26,33,0.6) 50%, rgba(13,26,33,0.2) 100%);
+        }
+        .hero-content { position: relative; z-index: 2; width: 100%; }
+        .hero-text { max-width: 620px; color: var(--cream); }
+        .hero-text h1 { font-size: clamp(38px, 5.5vw, 68px); line-height: 1.1; margin: 16px 0 26px; }
+        .hero-text h1 em { font-style: italic; color: var(--gold-light); }
+        .hero-text .sub { font-size: clamp(17px, 2vw, 21px); color: #c3d0d5; margin-bottom: 40px; max-width: 500px; }
+
+        .hero-portrait {
+            position: absolute;
+            right: 6%;
+            bottom: -80px;
+            width: 320px;
+            height: 420px;
+            border-radius: 160px 160px 24px 24px;
+            overflow: hidden;
+            border: 3px solid var(--gold);
+            box-shadow: 0 30px 80px rgba(0,0,0,0.5);
+            z-index: 3;
+            background: #16333d;
+        }
+        .hero-portrait img { width: 100%; height: 100%; object-fit: cover; }
+        .hero-portrait figcaption {
+            position: absolute; left: 0; right: 0; bottom: 0;
+            padding: 16px;
+            background: linear-gradient(transparent, rgba(13,26,33,0.95));
+            font-family: Georgia, serif;
+            font-size: 15px;
+            color: var(--cream);
+            text-align: center;
+        }
+        .hero-portrait figcaption small { display: block; font-family: 'Segoe UI', sans-serif; font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold-light); margin-top: 2px; }
+
+        .btn {
+            display: inline-block;
+            padding: 17px 42px;
+            border-radius: 999px;
+            background: linear-gradient(135deg, var(--gold), #b08a42);
+            color: var(--ink);
+            text-decoration: none;
+            font-size: 14px;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            font-weight: 600;
+            box-shadow: 0 12px 30px rgba(201, 163, 92, 0.28);
+            transition: 0.3s;
+        }
+        .btn:hover { transform: translateY(-2px); box-shadow: 0 16px 38px rgba(201, 163, 92, 0.4); }
+
+        /* ===== БЕГУЩАЯ СТРОКА ===== */
+        .marquee { background: var(--ink-2); padding: 18px 0; overflow: hidden; border-top: 1px solid rgba(201,163,92,0.2); border-bottom: 1px solid rgba(201,163,92,0.2); }
+        .marquee-content { display: flex; gap: 60px; animation: scroll 30s linear infinite; white-space: nowrap; }
+        .marquee-content span { font-family: Georgia, serif; font-size: 18px; color: var(--gold-light); letter-spacing: 0.1em; opacity: 0.7; }
+        @keyframes scroll { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+
+        /* ===== БЕГУЩАЯ СТРОКА С БЛАГОДАРНОСТЬЮ (тёмная, как framed) ===== */
+        .marquee-thanks {
+            background: var(--ink);
+            border-top: 1px solid rgba(201,163,92,0.25);
+            border-bottom: none;
+            padding: 22px 0;
+        }
+        .marquee-thanks .marquee-content span {
+            font-size: 16px;
+            color: var(--gold-light);
+            opacity: 0.85;
+            letter-spacing: 0.08em;
+        }
+
+        /* ===== АСИММЕТРИЧНЫЙ БЛОК ===== */
+        .asym { display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 80px; align-items: center; }
+        .asym-photo { position: relative; height: 560px; border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); }
+        .asym-photo img { width: 100%; height: 100%; object-fit: cover; }
+        .asym-badge {
+            position: absolute; bottom: -24px; right: -24px;
+            background: var(--gold); color: var(--ink);
+            padding: 20px 28px; border-radius: 12px;
+            font-family: Georgia, serif; font-style: italic; font-size: 18px;
+            max-width: 260px; box-shadow: 0 10px 30px rgba(201,163,92,0.4); z-index: 2;
+        }
+        .asym-photo-wrap { position: relative; }
+
+        /* ===== КОЛЛАЖ ===== */
+        .collage { position: relative; height: 820px; margin: 40px 0; }
+        .collage-item { position: absolute; overflow: hidden; border-radius: var(--radius); box-shadow: var(--shadow); }
+        .collage-item img { width: 100%; height: 100%; object-fit: cover; }
+        .collage-1 { left: 0; top: 80px; width: 56%; height: 540px; z-index: 1; }
+        .collage-2 { right: 0; top: 0; width: 36%; height: 450px; z-index: 2; }
+        .collage-3 { left: calc(56% - 180px); top: calc(80px + 540px - 100px); width: 52%; aspect-ratio: 3 / 2; height: auto; z-index: 3; border: 3px solid var(--gold); }
+        .collage-quote {
+            position: absolute; left: 6%; top: 580px; max-width: 340px;
+            font-family: Georgia, serif; font-style: italic; font-size: 20px; color: var(--sea);
+            z-index: 4; background: rgba(249,247,242,0.92);
+            padding: 20px 24px; border-left: 3px solid var(--gold);
+        }
+
+        /* ===== ЧЕРЕДУЮЩИЕСЯ БЛОКИ ===== */
+        .alt-row { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; margin-bottom: 100px; }
+        .alt-row:last-child { margin-bottom: 0; }
+        .alt-row:nth-child(even) .alt-photo { order: 2; }
+        .alt-row:nth-child(even) .alt-text { order: 1; }
+        .alt-photo { height: 420px; border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); }
+        .alt-photo img { width: 100%; height: 100%; object-fit: cover; }
+        .alt-text .num { font-family: Georgia, serif; font-size: 64px; color: var(--gold-light); line-height: 1; margin-bottom: 8px; }
+        .alt-text h3 { font-size: 28px; margin-bottom: 16px; color: var(--ink); }
+        .alt-text p { font-size: 17px; color: #5b6a71; }
+
+        /* ===== ПАНОРАМА ===== */
+        .panorama { position: relative; height: 1050px; overflow: hidden; padding: 0; }
+        .panorama img { width: 100%; height: 100%; object-fit: cover; }
+        .panorama-quote {
+            position: absolute;
+            right: 6%;
+            bottom: 60px;
+            max-width: 500px;
+            text-align: left;
+            color: var(--cream);
+            font-family: Georgia, serif;
+            font-style: italic;
+            font-size: clamp(20px, 2.5vw, 30px);
+            line-height: 1.4;
+            padding: 36px;
+            background: rgba(13,26,33,0.6);
+            backdrop-filter: blur(4px);
+            border-radius: var(--radius);
+            border: 1px solid rgba(201,163,92,0.4);
+        }
+        .panorama-quote b { color: var(--gold-light); font-weight: 400; }
+
+        /* ===== ФОТО С РАМКОЙ (тёмно-синий фон) ===== */
+        .framed-section {
+            background: var(--ink);
+            padding: 120px 0;
+            position: relative;
+        }
+        .framed { display: grid; grid-template-columns: 0.9fr 1.1fr; gap: 80px; align-items: center; }
+        .framed-photo { position: relative; height: 560px; padding: 20px; border: 2px solid var(--gold); border-radius: var(--radius); }
+        .framed-photo-inner { height: 100%; border-radius: 12px; overflow: hidden; }
+        .framed-photo-inner img { width: 100%; height: 100%; object-fit: cover; }
+        .framed-text .eyebrow { color: var(--gold-light); }
+        .framed-text .h2 { color: var(--cream); }
+        .framed-text .lead { color: #b9c6cc; }
+
+        /* ===== РАССВЕТ ===== */
+        .dawn { height: 990px; position: relative; overflow: hidden; padding: 0; display: flex; align-items: flex-end; justify-content: center; }
+        .dawn img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: 0; }
+        .dawn-overlay {
+            position: absolute; inset: 0; z-index: 1;
+            background: linear-gradient(to right, rgba(13,26,33,0.7) 0%, rgba(13,26,33,0.1) 25%, rgba(13,26,33,0.1) 75%, rgba(13,26,33,0.7) 100%);
+            pointer-events: none;
+        }
+        .dawn-text {
+            position: relative; z-index: 2; text-align: center; color: #0d2b45;
+            font-family: Georgia, serif; font-size: clamp(24px, 3vw, 36px); font-style: italic;
+            font-weight: 700; max-width: 800px; padding: 20px 40px; margin-bottom: 40px;
+            background: rgba(249,247,242,0.45);
+            border-radius: 16px; backdrop-filter: blur(4px);
+            text-shadow: 0 2px 12px rgba(249,247,242,0.6);
+        }
+
+        /* ===== КАРТОЧКИ-ССЫЛКИ ===== */
+        .links-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; margin-top: 48px; }
+        .link-card {
+            background: #fff; border-radius: var(--radius); padding: 32px 24px;
+            text-align: center; text-decoration: none; color: var(--ink);
+            box-shadow: var(--shadow); border-top: 3px solid var(--pistachio);
+            transition: 0.3s;
+        }
+        .link-card:hover { transform: translateY(-6px); box-shadow: 0 30px 70px rgba(34,51,59,0.15); }
+        .link-card h3 { font-size: 20px; margin-bottom: 8px; font-family: Georgia, serif; }
+        .link-card p { font-size: 14px; color: #5b6a71; position: relative; padding-bottom: 10px; }
+
+        .link-card:nth-child(1) h3 { color: var(--gold); }
+        .link-card:nth-child(2) h3 { color: var(--sea); }
+        .link-card:nth-child(3) h3 { color: var(--pistachio); filter: brightness(0.7); }
+        .link-card:nth-child(4) h3 { color: var(--terracotta); }
+
+        .link-card p::after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 6px;
+            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 6"><path d="M0,3 Q15,0 30,3 T60,3" stroke="%231f5260" stroke-width="1.5" fill="none"/></svg>') no-repeat center;
+            background-size: 60px 6px;
+            animation: waveMove 2s ease-in-out infinite;
+            opacity: 0.7;
+        }
+        @keyframes waveMove {
+            0%, 100% { transform: translateX(-50%) translateY(0); }
+            50% { transform: translateX(-50%) translateY(-2px); }
+        }
+
+        /* ===== FOR BUYERS ===== */
+        .buyers-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; margin-top: 48px; }
+        .buyer-col { text-align: center; padding: 40px 28px; background: #fff; border-radius: var(--radius); box-shadow: var(--shadow); border-top: 3px solid var(--sky); }
+        .buyer-col .ic { width: 64px; height: 64px; margin: 0 auto 20px; border-radius: 50%; background: var(--sky-light); display: flex; align-items: center; justify-content: center; color: var(--sea); }
+        .buyer-col h3 { font-size: 18px; margin-bottom: 10px; color: var(--ink); }
+        .buyer-col p { font-size: 15px; color: #5b6a71; }
+
+        /* ===== FAQ ===== */
+        .faq { background: var(--cream-2); }
+        .faq-list { max-width: 820px; margin: 48px auto 0; }
+        .faq-item { background: #fff; border-radius: 16px; margin-bottom: 12px; box-shadow: 0 4px 16px rgba(34,51,59,0.06); overflow: hidden; }
+        .faq-item summary { padding: 22px 28px; font-family: Georgia, serif; font-size: 18px; color: var(--ink); cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; transition: 0.2s; }
+        .faq-item summary::-webkit-details-marker { display: none; }
+        .faq-item summary::after { content: '+'; font-size: 24px; color: var(--gold); transition: 0.3s; }
+        .faq-item[open] summary::after { content: '−'; }
+        .faq-item summary:hover { background: var(--sky-light); }
+        .faq-item p { padding: 0 28px 24px; font-size: 15.5px; color: #4a5a62; }
+
+        /* ===== SUBSCRIBE ===== */
+        .subscribe { background: var(--ink); padding: 100px 0; position: relative; }
+        .subscribe-grid {
+            display: grid;
+            grid-template-columns: 0.35fr 0.65fr;
+            gap: 60px;
+            align-items: center;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .subscribe-cover {
+            position: relative;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 30px 60px rgba(0,0,0,0.5);
+            border: 1px solid rgba(201,163,92,0.4);
+            height: 480px;
+            background: #16333d;
+        }
+        .subscribe-cover img { width: 100%; height: 100%; object-fit: cover; }
+
+        .subscribe-text .eyebrow { color: var(--gold-light); }
+        .subscribe-text .h2 { color: var(--cream); font-size: clamp(24px, 3vw, 34px); margin-bottom: 16px; }
+        .subscribe-text p { font-size: 16px; color: #b9c6cc; margin-bottom: 28px; }
+        .subscribe-form { display: flex; gap: 12px; max-width: 480px; }
+        .subscribe-form input {
+            flex: 1; padding: 16px 22px;
+            border: 1px solid rgba(201,163,92,0.4);
+            background: rgba(255,255,255,0.06);
+            color: var(--cream);
+            border-radius: 999px; font-size: 15px; outline: none; transition: 0.3s;
+        }
+        .subscribe-form input::placeholder { color: #8fa0a7; }
+        .subscribe-form input:focus { border-color: var(--gold); }
+        .subscribe-form button {
+            padding: 16px 32px; border: none; border-radius: 999px;
+            background: var(--gold); color: var(--ink);
+            font-size: 13px; letter-spacing: 0.14em; text-transform: uppercase; font-weight: 600;
+            cursor: pointer; transition: 0.3s;
+        }
+        .subscribe-form button:hover { background: var(--gold-light); }
+
+        /* ===== CONTACTS ===== */
+        .contacts { padding-bottom: 0; }
+        .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; }
+        .contact-photo { height: 560px; border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); }
+        .contact-photo img { width: 100%; height: 100%; object-fit: cover; }
+        .contact-text .mail { font-family: Georgia, serif; font-size: clamp(20px, 3vw, 27px); color: var(--sea); text-decoration: none; border-bottom: 1px solid var(--gold); padding-bottom: 2px; display: inline-block; margin: 20px 0; }
+        .contact-text .mail:hover { color: var(--ink); }
+        .socials { display: flex; gap: 18px; margin-top: 24px; }
+        .soc { width: 54px; height: 54px; border-radius: 50%; display: flex; align-items: center; justify-content: center; background: var(--ink); transition: 0.3s; }
+        .soc:hover { background: var(--gold); transform: translateY(-3px); }
+        .soc svg { width: 24px; height: 24px; fill: var(--cream); }
+
+        /* ===== FOOTER ===== */
+        footer { background: var(--ink); color: #8fa0a7; padding: 72px 0 40px; border-top: 1px solid rgba(201,163,92,0.25); margin-top: 0; }
+        .f-grid { display: grid; grid-template-columns: 1.2fr 1fr 1fr; gap: 44px; margin-bottom: 44px; }
+        footer h4 { font-family: Georgia, serif; color: var(--cream); font-size: 18px; margin-bottom: 16px; letter-spacing: 0.06em; }
+        footer a { color: #9fb1b8; text-decoration: none; transition: 0.3s; }
+        footer a:hover { color: var(--gold-light); }
+        footer ul { list-style: none; }
+        footer li { margin-bottom: 10px; font-size: 15px; }
+
+        .legal-info { border-top: 1px solid rgba(255,255,255,0.08); padding-top: 26px; margin-top: 26px; text-align: center; font-size: 12px; color: #6a7a81; line-height: 1.8; }
+        .legal-info a { color: #8fa0a7; text-decoration: underline; margin: 0 6px; }
+        .legal-info a:hover { color: var(--gold-light); }
+        .copy { margin-top: 10px; font-size: 13px; letter-spacing: 0.08em; color: #8fa0a7; }
+
+               /* ===== МОБИЛЬНАЯ ===== */
+        @media (max-width: 900px) {
+            section { padding: 80px 0; }
+            .asym, .framed, .contact-grid, .alt-row { grid-template-columns: 1fr; gap: 40px; }
+            .alt-row:nth-child(even) .alt-photo, .alt-row:nth-child(even) .alt-text { order: initial; }
+            .hero-portrait { display: none; }
+
+            /* КОЛЛАЖ: фото друг под другом */
+            .collage {
+                position: relative;
+                height: auto;
+                margin: 20px 0;
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+            }
+            .collage-item {
+                position: relative;
+                left: auto !important;
+                right: auto !important;
+                top: auto !important;
+                width: 100% !important;
+                height: auto !important;
+                aspect-ratio: 4 / 3;
+                border: none !important;
+            }
+            .collage-1 { aspect-ratio: 4 / 3; }
+            .collage-2 { aspect-ratio: 3 / 2; }
+            .collage-3 { aspect-ratio: 16 / 9; }
+            .collage-quote {
+                position: relative;
+                left: auto;
+                top: auto;
+                max-width: none;
+                margin: 0;
+                padding: 18px 20px;
+                font-size: 17px;
+            }
+
+            .buyers-grid { grid-template-columns: 1fr; gap: 24px; }
+            .links-grid { grid-template-columns: repeat(2, 1fr); }
+            .f-grid { grid-template-columns: 1fr; gap: 32px; }
+            .menu { position: fixed; top: 72px; right: 0; flex-direction: column; gap: 0; background: var(--ink); width: 100%; padding: 12px 0; transform: translateY(-130%); transition: 0.35s; border-bottom: 1px solid rgba(201,163,92,0.3); }
+            .menu.open { transform: translateY(0); }
+            .menu li { text-align: center; }
+            .menu a { display: block; padding: 14px; }
+            .burger { display: block; }
+            .btn-nav { display: none; }
+
+            /* ПАНОРАМА: цитата внизу, не перекрывает */
+            .panorama { height: 500px; }
+            .panorama-quote {
+                right: 5%;
+                left: 5%;
+                bottom: 24px;
+                top: auto;
+                max-width: none;
+                text-align: center;
+                transform: none;
+                padding: 22px;
+                font-size: 18px;
+            }
+
+            .dawn { height: 420px; align-items: flex-end;}
+            .asym-photo, .framed-photo, .contact-photo { height: 420px; }
+            .dawn-text {    margin-bottom: 20px;    /* было 40px — уменьшаем отступ снизу */ font-size: 18px;   /* было 20px — чуть меньше, чтобы влезал */ padding: 14px 18px; /* компактнее */}
+            .subscribe-grid { grid-template-columns: 1fr; gap: 40px; }
+            .subscribe-cover { height: 360px; max-width: 280px; margin: 0 auto; }
+            .framed-section { padding: 80px 0; }
+
+            /* Лицо Гекаты по центру */
+            .alt-row:nth-child(2) .alt-photo img { object-position: 50% 30%; }
+        }
+
+        @media (max-width: 560px) {
+            .hero-text h1 { font-size: 34px; }
+            .subscribe-form { flex-direction: column; }
+            .links-grid { grid-template-columns: 1fr; }
+            .subscribe-cover { height: 300px; max-width: 240px; }
+
+            /* Коллаж на телефоне — ещё компактнее */
+            .collage { gap: 12px; }
+            .collage-1 { aspect-ratio: 4 / 3; }
+            .collage-2 { aspect-ratio: 3 / 2; }
+            .collage-3 { aspect-ratio: 16 / 9; }
+            .collage-quote { font-size: 16px; padding: 16px 18px; }
+
+            .panorama { height: 420px; }
+            .panorama-quote { font-size: 16px; padding: 18px; bottom: 18px; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ШАПКА -->
+    <header>
+        <div class="container nav">
+            <a class="logo" href="#hero">ТАИС<span> АФИНСКАЯ</span></a>
+            <button class="burger" id="burger" aria-label="Меню"><span></span><span></span><span></span></button>
+            <ul class="menu" id="menu">
+                <li><a href="#who">О мистериях</a></li>
+                <li><a href="#collections">Что будет</a></li>
+                <li><a href="#buyers">Формат</a></li>
+                <li><a href="#faq">Вопросы</a></li>
+                <li><a href="#contacts">Контакты</a></li>
+            </ul>
+            <a class="btn-nav" href="#contacts">Оставить заявку</a>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero" id="hero">
+        <div class="hero-bg">
+            <img src="cover.jpg" alt="Атмосфера мистерии">
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <div class="hero-text">
+                <span class="eyebrow">Авторский женский тренинг</span>
+                <h1>Секреты <em>Таис Афинской</em></h1>
+                <p class="sub">Откройте для себя Тайну Древнегреческих Мистерий. Четыре воскресенья, которые вернут Вам ощущение управления женской силой для изменения своей судьбы.</p>
+                <a class="btn" href="#buyers">Узнать условия</a>
+            </div>
+        </div>
+        <figure class="hero-portrait">
+            <img src="greece.jpg" alt="Натали Мадам — ведущая тренинга">
+            <figcaption>Натали Мадам<small>Ведущая тренинга</small></figcaption>
+        </figure>
+    </section>
+
+    <!-- БЕГУЩАЯ СТРОКА -->
+    <div class="marquee">
+        <div class="marquee-content">
+            <span>Полная конфиденциальность</span><span>•</span><span>Авторская программа</span><span>•</span><span>Защищённое пространство</span><span>•</span><span>Из любой точки мира</span><span>•</span><span>Закрытая практика</span><span>•</span><span>Малая группа</span><span>•</span>
+            <span>Полная конфиденциальность</span><span>•</span><span>Авторская программа</span><span>•</span><span>Защищённое пространство</span><span>•</span><span>Из любой точки мира</span><span>•</span><span>Закрытая практика</span><span>•</span><span>Малая группа</span><span>•</span>
+        </div>
+    </div>
+
+    <!-- АСИММЕТРИЧНЫЙ БЛОК -->
+    <section>
+        <div class="container asym">
+            <div class="asym-photo-wrap">
+                <div class="asym-photo">
+                    <img src="me.jpg" alt="Натали Мадам">
+                </div>
+                <div class="asym-badge">«Я не учу жить. Я показываю дорогу в состояние силы»</div>
+            </div>
+            <div class="asym-text" id="who">
+                <span class="eyebrow">Кто я</span>
+                <h2 class="h2">Натали Мадам: писатель, психолог, архитектор женской судьбы</h2>
+                <div class="rule"></div>
+                <p class="lead">Мне 50 лет. Я пережила глубокую трансформацию — не на страницах книг, а в собственной жизни. Сегодня я исследую подсознание и помогаю женщинам находить дорогу к себе — вдумчиво, без поверхностных рецептов.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- КОЛЛАЖ -->
+    <section>
+        <div class="container">
+            <div class="collage">
+                <div class="collage-item collage-1">
+                    <img src="tais3.jpg" alt="Атмосфера мистерии">
+                </div>
+                <div class="collage-item collage-2">
+                    <img src="tais2.jpg" alt="Детали тренинга">
+                </div>
+                <div class="collage-item collage-3">
+                    <img src="tais1.jpg" alt="Путь Таис Афинской">
+                </div>
+                <div class="collage-quote">Вместе с Таис Афинской мы пройдём путь, на котором женская сила раскрывается постепенно, достигая пика своего могущества.</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ЧЕРЕДУЮЩИЕСЯ БЛОКИ -->
+    <section id="collections">
+        <div class="container">
+            <div class="center">
+                <span class="eyebrow">Что будет на тренинге</span>
+                <h2 class="h2">Четыре воскресенья — четыре ступени погружения</h2>
+                <div class="rule"></div>
+                <p class="lead" style="margin: 0 auto 60px;">Каждая встреча — это отдельная практика, ведущая Вас глубже и подготавливающая к следующей.</p>
+            </div>
+
+            <div class="alt-row">
+                <div class="alt-photo"><img src="afrodita.jpg" alt="Афины. Знак Афродиты"></div>
+                <div class="alt-text">
+                    <div class="num">01</div>
+                    <h3>АФИНЫ. Знак Афродиты</h3>
+                    <p>Практика первой ступени. Таис начинала в Афинах как гетера — женщина, которая была красива, умна и талантлива, умела видеть знаки Афродиты и выбирать для любви достойных мужчин.</p>
+                </div>
+            </div>
+
+            <div class="alt-row">
+                <div class="alt-photo"><img src="gekata.jpg" alt="Мемфис. Знак Гекаты"></div>
+                <div class="alt-text">
+                    <div class="num">02</div>
+                    <h3>МЕМФИС. Знак Гекаты</h3>
+                    <p>Практика второй ступени. Богиня перекрёстков стоит на границе между старым и новым, держит ключи от двух миров, давая Таис знак для точки прощания: ты находишься у порога, и у тебя есть ключ от своей новой жизни.</p>
+                </div>
+            </div>
+
+            <div class="alt-row">
+                <div class="alt-photo"><img src="artemida.jpg" alt="Персеполис. Знак Артемиды"></div>
+                <div class="alt-text">
+                    <div class="num">03</div>
+                    <h3>ПЕРСЕПОЛИС. Знак Артемиды</h3>
+                    <p>Практика третьей ступени. Богиня дикой природы и охоты не боится тьмы — она чувствует её инстинктом. Артемида даёт Таис знак: действовать не из страха, а из внутреннего огня. Здесь она встречается с тем, что долго обходила стороной, и проходит через это, как охотница через ночной лес.</p>
+                </div>
+            </div>
+
+            <div class="alt-row">
+                <div class="alt-photo"><img src="nika.jpg" alt="Вавилон. Знак Ники"></div>
+                <div class="alt-text">
+                    <div class="num">04</div>
+                    <h3>ВАВИЛОН. Знак Ники</h3>
+                    <p>Практика четвёртой ступени. Богиня победы даёт знак — Таис одерживает личный триумф и уходит из Вавилона победительницей, а не жертвой. Она завершает путь с Александром и начинает свой.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ПАНОРАМА -->
+    <section class="panorama">
+        <img src="pogruzhenie.jpg" alt="Женщины в кругу, свечи, карты">
+        <div class="panorama-quote">«Это не терапия. Это <b>погружение</b> и соприкосновение с тем, что находится за пределами человеческих наблюдений».</div>
+    </section>
+
+    <!-- FOR BUYERS -->
+    <section id="buyers">
+        <div class="container center">
+            <span class="eyebrow">Формат и условия</span>
+            <h2 class="h2">Всё, что нужно знать</h2>
+            <div class="rule"></div>
+            <div class="buyers-grid">
+                <div class="buyer-col">
+                    <div class="ic"><svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M19 4h-1V2h-2v2H8V2H6v2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 16H5V9h14z"/></svg></div>
+                    <h3>Формат</h3>
+                    <p>Закрытое онлайн-погружение (Zoom). 4 встречи по воскресеньям, 2–2,5 часа.</p>
+                </div>
+                <div class="buyer-col">
+                    <div class="ic"><svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm1 15h-2v-2h2zm0-4h-2V7h2z"/></svg></div>
+                    <h3>Стоимость</h3>
+                    <p>15 000 ₽ за весь тренинг. Оплата возможна в рассрочку.</p>
+                </div>
+                <div class="buyer-col">
+                    <div class="ic"><svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2 4 5v6c0 5 3.4 9.7 8 11 4.6-1.3 8-6 8-11V5z"/></svg></div>
+                    <h3>Без записей</h3>
+                    <p>Мистерия живёт только в настоящем моменте. Присутствие обязательно. 6–8 женщин.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ВОЛНА ПЕРЕД КРУГОМ -->
+    <svg class="wave-divider" viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true">
+        <path d="M0,50 C240,95 480,0 720,40 C960,80 1200,10 1440,50 L1440,90 L0,90 Z" fill="#0d1a21"/>
+        <path d="M0,58 C240,100 480,8 720,48 C960,88 1200,18 1440,58" stroke="#c9a35c" stroke-opacity=".45" stroke-width="1.5" fill="none"/>
+    </svg>
+
+    <!-- ФОТО С РАМКОЙ (тёмно-синий фон) -->
+    <section class="framed-section">
+        <div class="container framed">
+            <div class="framed-photo">
+                <div class="framed-photo-inner">
+                    <img src="roskosh.jpg" alt="Женщины за столом">
+                </div>
+            </div>
+            <div class="framed-text">
+                <span class="eyebrow">Закрытый круг</span>
+                <h2 class="h2">Маленькая группа — это роскошь</h2>
+                <div class="rule"></div>
+                <p class="lead">6–8 женщин. Не больше. Потому что мистерия не терпит толпы. Каждой будет уделено настоящее внимание. Никто не останется «в зале» — все будут в круге.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- БЕГУЩАЯ СТРОКА С БЛАГОДАРНОСТЬЮ -->
+    <div class="marquee marquee-thanks">
+        <div class="marquee-content">
+            <span>Благодарю Айгуль и Софию</span><span>•</span>
+            <span>Конно-спортивную школу «Тулпар»</span><span>•</span>
+            <span>За организацию фотосессии и участие в съёмках</span><span>•</span>
+            <span>Благодарю Айгуль и Софию</span><span>•</span>
+            <span>Конно-спортивную школу «Тулпар»</span><span>•</span>
+            <span>За организацию фотосессии и участие в съёмках</span><span>•</span>
+        </div>
+    </div>
+
+    <!-- FAQ -->
+    <section class="faq" id="faq">
+        <div class="container center">
+            <span class="eyebrow">Частые вопросы</span>
+            <h2 class="h2">Ответы на то, что важно</h2>
+            <div class="rule"></div>
+            <div class="faq-list">
+                <details class="faq-item"><summary>Это эзотерика?</summary><p>Нет. Это работа с архетипами и подсознанием. Мы используем образы и ритуалы, но не магию. Это скорее глубинная психология, одетая в античную форму.</p></details>
+                <details class="faq-item"><summary>Что если я не верю в тотемы?</summary><p>Тотем — это не божество и не идол. Это метафора вашего внутреннего состояния. Мы работаем с образом, который помогает вам лучше понять себя. Вера здесь не требуется.</p></details>
+                <details class="faq-item"><summary>Будут ли записи?</summary><p>Нет. Тренинг не записывается. Это осознанное условие: мистерия живёт только в настоящем моменте. Именно присутствие создаёт то самое чувство круга.</p></details>
+                <details class="faq-item"><summary>Можно ли оплатить в рассрочку?</summary><p>Да. Мы можем обсудить удобный для вас вариант оплаты. Напишите мне, и мы найдём решение.</p></details>
+                <details class="faq-item"><summary>Кому точно не подойдёт?</summary><p>Тем, кто ищет «волшебную таблетку». Тем, кто не готов к групповой работе. Тем, кто хочет просто послушать лекции. Это глубокий процесс, и он требует включённости.</p></details>
+            </div>
+        </div>
+    </section>
+
+    <!-- РАССВЕТ -->
+    <section class="dawn">
+        <img src="final.jpg" alt="Рассвет">
+        <div class="dawn-overlay"></div>
+        <div class="dawn-text">«Идти своей дорогой может только женщина, умеющая управлять своей силой».</div>
+    </section>
+
+    <!-- КАРТОЧКИ-ССЫЛКИ -->
+    <section>
+        <div class="container">
+            <div class="center">
+                <span class="eyebrow">Погрузитесь глубже</span>
+                <h2 class="h2">Узнать больше</h2>
+                <div class="rule"></div>
+            </div>
+            <div class="links-grid">
+                <a href="#" class="link-card">
+                    <h3>Кто такая Таис Афинская</h3>
+                    <p>Архетип, история и символизм</p>
+                </a>
+                <a href="#" class="link-card">
+                    <h3>История тренинга</h3>
+                    <p>Как рождалась методика</p>
+                </a>
+                <a href="#" class="link-card">
+                    <h3>Женский интерактив</h3>
+                    <p>Закрытый чат и поддержка</p>
+                </a>
+                <a href="#" class="link-card">
+                    <h3>Практики</h3>
+                    <p>Авторские ритуалы и медитации</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ВОЛНА ПЕРЕД КНИГОЙ -->
+    <svg class="wave-divider" viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true">
+        <path d="M0,50 C240,95 480,0 720,40 C960,80 1200,10 1440,50 L1440,90 L0,90 Z" fill="#0d1a21"/>
+        <path d="M0,58 C240,100 480,8 720,48 C960,88 1200,18 1440,58" stroke="#c9a35c" stroke-opacity=".45" stroke-width="1.5" fill="none"/>
+    </svg>
+
+    <!-- SUBSCRIBE -->
+    <section class="subscribe" id="subscribe">
+        <div class="container">
+            <div class="subscribe-grid">
+                <div class="subscribe-cover">
+                    <img src="yakorya.jpg" alt="Книга «Утренние якоря»">
+                </div>
+                <div class="subscribe-text">
+                    <span class="eyebrow">Бесплатный подарок</span>
+                    <h2 class="h2">Получите книгу «Утренние якоря» в подарок</h2>
+                   <p>Напишите мне на почту — и я пришлю вам книгу целиком. Она уже помогает женщинам начинать свой день с благоприятного старта.</p>
+<p style="margin-top: 20px; font-size: 22px; font-family: Georgia, serif; color: var(--gold-light);">
+    <a href="mailto:hello@nataly-madam.ru" style="color: var(--gold-light); text-decoration: none; border-bottom: 1px solid var(--gold); padding-bottom: 2px;">
+        hello@nataly-madam.ru
+    </a>
+</p>
+<p style="font-size: 14px; color: #8fa0a7; margin-top: 16px;">
+    В письме укажите, что хотите получить книгу «Утренние якоря».
+</p>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACTS -->
+    <section class="contacts" id="contacts">
+        <div class="container contact-grid">
+            <div class="contact-photo">
+                <img src="writeme.jpg" alt="Натали Мадам">
+            </div>
+            <div class="contact-text">
+                <span class="eyebrow">Напишите мне</span>
+                <h2 class="h2">Один шаг до встречи</h2>
+                <div class="rule"></div>
+                <p class="lead">Напишите письмо — расскажите немного о себе и о том, что привело Вас сюда. Я отвечаю каждой.</p>
+                <a class="mail" href="mailto:hello@nataly-madam.ru">hello@nataly-madam.ru</a>
+                <div class="socials">
+                    <a class="soc" href="https://t.me/nataly_madam" aria-label="Telegram"><svg viewBox="0 0 24 24"><path d="M21.9 3.4 2.7 10.8c-1.3.5-1.3 1.3-.2 1.6l4.9 1.5 1.9 5.7c.2.6.1.9.8.9.5 0 .7-.2 1-.5l2.4-2.3 5 3.7c.9.5 1.6.2 1.8-.9l3.3-15.5c.3-1.3-.5-1.9-1.7-1.6zM8 13.6l10.7-6.8c.5-.3 1-.1.6.2l-9.1 8.2-.4 3.8z"/></svg></a>
+                    <a class="soc" href="https://vk.com/nataly_madam" aria-label="VK"><svg viewBox="0 0 24 24"><path d="M12.8 18.6c-6.2 0-9.8-4.3-9.9-11.4h3.1c.1 5.2 2.4 7.4 4.2 7.9V7.2h3v4.5c1.8-.2 3.7-2.2 4.3-4.5h2.9c-.5 2.8-2.5 4.8-3.9 5.6 1.4.7 3.7 2.4 4.6 5.8h-3.2c-.7-2.1-2.4-3.8-4.7-4v4z"/></svg></a>
+                    <a class="soc" href="https://youtube.com/@nataly_madam" aria-label="YouTube"><svg viewBox="0 0 24 24"><path d="M21.6 7.2a2.5 2.5 0 0 0-1.8-1.8C18.2 5 12 5 12 5s-6.2 0-7.8.4A2.5 2.5 0 0 0 2.4 7.2 26 26 0 0 0 2 12c0 1.6.1 3.2.4 4.8a2.5 2.5 0 0 0 1.8 1.8C5.8 19 12 19 12 19s6.2 0 7.8-.4a2.5 2.5 0 0 0 1.8-1.8c.3-1.6.4-3.2.4-4.8s-.1-3.2-.4-4.8zM10 15.2V8.8l5.2 3.2z"/></svg></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ВОЛНА ПЕРЕД ФУТЕРОМ -->
+    <svg class="wave-divider" viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true">
+        <path d="M0,50 C240,95 480,0 720,40 C960,80 1200,10 1440,50 L1440,90 L0,90 Z" fill="#0d1a21"/>
+        <path d="M0,58 C240,100 480,8 720,48 C960,88 1200,18 1440,58" stroke="#c9a35c" stroke-opacity=".45" stroke-width="1.5" fill="none"/>
+    </svg>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="f-grid">
+                <div>
+                    <h4>Натали <span style="color: var(--gold);">Мадам</span></h4>
+                    <p style="font-size: 15px; max-width: 320px;">Писатель, психолог, архитектор женской судьбы. Авторские тренинги для женщин, выбирающих глубину.</p>
+                </div>
+                <div>
+                    <h4>Контакты</h4>
+                    <ul>
+                        <li><a href="mailto:hello@nataly-madam.ru">hello@nataly-madam.ru</a></li>
+                        <li><a href="https://t.me/nataly_madam">Telegram</a></li>
+                        <li><a href="https://vk.com/nataly_madam">VK</a></li>
+                        <li><a href="https://youtube.com/@nataly_madam">YouTube</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Мои сайты</h4>
+                    <ul>
+                        <li><a href="https://nataly-madam.ru" target="_blank" rel="noopener">Писательский сайт — nataly-madam.ru</a></li>
+                        <li><a href="https://estetikon.ru" target="_blank" rel="noopener">Атлас эстетик — estetikon.ru</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="legal-info">
+                <div>tais-afinskaya.ru</div>
+                <div style="margin-top: 6px;">
+                    <a href="#">Политика конфиденциальности</a> |
+                    <a href="#">Пользовательское соглашение</a> |
+                    <a href="#">Публичная оферта</a> |
+                    <a href="#">Согласие на обработку персональных данных</a>
+                </div>
+                <div class="copy">© 2026 Натали Мадам. Все права защищены.</div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const burger = document.getElementById('burger');
+        const menu = document.getElementById('menu');
+        burger.addEventListener('click', () => menu.classList.toggle('open'));
+        menu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => menu.classList.remove('open')));
+    </script>
+</body>
+</html>
