@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#7E1C45" />
+
+  <!-- ===== SEO: TITLE & DESCRIPTION ===== -->
+  <title>Политика конфиденциальности — Натали Мадам</title>
+  <meta name="description" content="Политика конфиденциальности сайта nataly-madam.ru. Как мы защищаем и используем ваши данные." />
+  <meta name="keywords" content="Натали Мадам, политика конфиденциальности, защита данных, ФЗ-152" />
+  <meta name="author" content="Натали Мадам" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://nataly-madam.ru/privacy.html" />
+
+  <!-- ===== OPEN GRAPH ===== -->
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="ru_RU" />
+  <meta property="og:site_name" content="Натали Мадам" />
+  <meta property="og:title" content="Политика конфиденциальности — Натали Мадам" />
+  <meta property="og:description" content="Политика конфиденциальности сайта nataly-madam.ru." />
+  <meta property="og:url" content="https://nataly-madam.ru/privacy.html" />
+  <meta property="og:image" content="https://nataly-madam.ru/author.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Натали Мадам — писательница" />
+
+  <!-- ===== TWITTER CARD ===== -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Политика конфиденциальности — Натали Мадам" />
+  <meta name="twitter:description" content="Политика конфиденциальности сайта nataly-madam.ru." />
+  <meta name="twitter:image" content="https://nataly-madam.ru/author.jpg" />
+  <meta name="twitter:image:alt" content="Натали Мадам — писательница" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Marck+Script&family=Caveat:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,700;0,800;1,400&display=swap" rel="stylesheet">
+
+  <link rel="icon" type="image/png" href="favicon.png">
+
+  <style>
+    :root{
+      --rose:#A6295B;
+      --rose-deep:#7E1C45;
+      --rose-soft:#F3DCE6;
+      --cherry:#5C0A1E;
+      --cherry-deep:#3A0512;
+      --gold:#C9A227;
+      --gold-light:#E8C766;
+      --gold-pale:#FBF3DC;
+      --cream:#FBF7F2;
+      --cream-warm:#F7EDE0;
+      --cream-deep:#F2E2D0;
+      --ink:#2B2230;
+      --serif:'Playfair Display','Didot','Bodoni MT',Georgia,'Times New Roman',serif;
+      --script:'Marck Script','Caveat','Georgia',cursive;
+      --sans:'Avenir Next','Segoe UI',system-ui,-apple-system,sans-serif;
+    }
+    *{margin:0;padding:0;box-sizing:border-box}
+    body{background:var(--cream);color:var(--ink);font-family:var(--sans);line-height:1.6;overflow-x:hidden}
+
+    /* --- HEADER --- */
+    header{position:sticky;top:0;z-index:50;background:rgba(251,247,242,.92);backdrop-filter:blur(10px);border-bottom:1px solid rgba(166,41,91,.15)}
+    .header-inner{max-width:1180px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:18px 28px}
+    .logo{text-decoration:none;display:flex;flex-direction:column;align-items:flex-start;gap:2px}
+    .logo-script{font-family:var(--script);font-size:1.9rem;line-height:1;color:var(--rose-deep);letter-spacing:.02em}
+    .logo-sub{font-family:var(--sans);font-size:.6rem;letter-spacing:.4em;text-transform:uppercase;color:rgba(126,28,69,.6);padding-left:.15em}
+    nav ul{display:flex;gap:24px;list-style:none}
+    nav a{text-decoration:none;color:var(--ink);font-size:.76rem;letter-spacing:.18em;text-transform:uppercase;font-weight:600;position:relative;padding:6px 0;transition:color .25s;white-space:nowrap}
+    nav a::after{content:'';position:absolute;left:50%;bottom:0;width:0;height:2px;background:linear-gradient(90deg,var(--gold),var(--rose));transition:all .3s;transform:translateX(-50%)}
+    nav a:hover{color:var(--rose)}
+    nav a:hover::after{width:100%}
+    nav a.nav-course{color:var(--rose-deep)}
+    nav a.nav-course::before{content:'✦';margin-right:6px;color:var(--gold);font-size:.7rem;vertical-align:middle}
+    .burger{display:none;background:none;border:none;cursor:pointer;padding:6px}
+    .burger span{display:block;width:26px;height:2px;background:var(--rose-deep);margin:6px 0;border-radius:2px;transition:.3s}
+    @media (max-width:760px){
+      .burger{display:block}
+      nav ul{position:fixed;top:66px;right:0;flex-direction:column;background:#fff;width:min(300px,80vw);height:calc(100vh - 66px);padding:36px;gap:26px;transform:translateX(100%);transition:.35s;box-shadow:-20px 0 40px rgba(126,28,69,.15)}
+      nav ul.open{transform:translateX(0)}
+    }
+
+    /* --- BREADCRUMBS --- */
+    .lw-breadcrumbs{max-width:1180px;margin:0 auto;padding:18px 20px 0;font-size:13px;color:#8a9a99;display:flex;align-items:center;gap:8px}
+    .lw-breadcrumbs a{color:var(--rose);text-decoration:none;font-weight:600}
+    .lw-breadcrumbs a:hover{text-decoration:underline}
+
+    /* --- CONTENT (ПОЛИТИКА) --- */
+    .lw-content {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 120px 28px 120px 28px; /* Увеличенный нижний паддинг для отступа от подвала */
+      background: #ffffff;
+      border-radius: 24px;
+      box-shadow: 0 10px 30px rgba(126,28,69,.08);
+      border: 1px solid rgba(166,41,91,.1);
+    }
+    .lw-content h1 {
+      font-family: var(--serif);
+      font-size: clamp(28px, 4vw, 40px);
+      font-weight: 800;
+      letter-spacing: -.02em;
+      color: var(--cherry-deep);
+      margin-bottom: 32px;
+      text-align: center;
+    }
+    .lw-content h2 {
+      font-family: var(--serif);
+      font-size: 22px;
+      font-weight: 700;
+      color: var(--rose-deep);
+      margin: 36px 0 16px;
+    }
+    .lw-content p {
+      font-size: 15.5px;
+      color: var(--ink);
+      margin-bottom: 14px;
+      line-height: 1.75;
+    }
+    .lw-content ul {
+      margin: 0 0 20px 24px;
+      padding: 0;
+    }
+    .lw-content li {
+      font-size: 15.5px;
+      color: var(--ink);
+      margin-bottom: 6px;
+    }
+    .lw-content a {
+      color: var(--rose);
+      text-decoration: underline;
+      font-weight: 600;
+    }
+    .lw-content strong {
+      color: var(--cherry-deep);
+    }
+    .lw-content ol {
+      margin: 0 0 20px 24px;
+      padding: 0;
+    }
+    .lw-content ol li {
+      margin-bottom: 10px;
+    }
+    @media (max-width: 760px) {
+      .lw-content { padding: 32px 24px 80px 24px; }
+    }
+
+    /* --- FOOTER --- */
+    footer{background:var(--rose-deep);color:#F3DCE6;padding:48px 28px 32px;text-align:center}
+    .footer-inner{max-width:1180px;margin:0 auto}
+    .footer-logo{font-family:var(--script);font-size:1.8rem;color:#F3DCE6;text-decoration:none;display:block;margin-bottom:12px}
+    .footer-copy{font-size:.75rem;letter-spacing:.18em;text-transform:uppercase;opacity:.75;line-height:1.8}
+    .footer-legal{
+      display:flex;
+      flex-wrap:wrap;
+      justify-content:center;
+      gap:8px 20px;
+      margin-top:20px;
+      padding-top:20px;
+      border-top:1px solid rgba(243,220,230,.15);
+    }
+    .footer-legal a{
+      font-family:var(--sans);
+      font-size:.7rem;
+      letter-spacing:.16em;
+      text-transform:uppercase;
+      color:rgba(243,220,230,.6);
+      text-decoration:none;
+      transition:color .25s;
+    }
+    .footer-legal a:hover{color:#F3DCE6;}
+
+    /* --- КНОПКА «НАВЕРХ» --- */
+    .to-top{
+      position:fixed;
+      left:24px;
+      bottom:24px;
+      width:56px;
+      height:56px;
+      border-radius:50%;
+      background:linear-gradient(135deg,var(--cherry) 0%,var(--cherry-deep) 100%);
+      color:var(--gold-light);
+      border:none;
+      cursor:pointer;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      z-index:900;
+      opacity:0;
+      pointer-events:none;
+      transform:translateY(12px);
+      transition:opacity .35s ease, transform .35s ease, box-shadow .3s ease, background .3s ease;
+      box-shadow:
+        0 8px 24px -10px rgba(58,5,18,.6),
+        inset 0 1px 0 rgba(255,255,255,.15);
+      font-family:var(--sans);
+    }
+    .to-top.is-visible{
+      opacity:1;
+      pointer-events:auto;
+      transform:translateY(0);
+    }
+    .to-top:hover{
+      background:linear-gradient(135deg,var(--cherry-deep) 0%,var(--cherry) 100%);
+      box-shadow:
+        0 14px 32px -10px rgba(58,5,18,.8),
+        inset 0 1px 0 rgba(255,255,255,.2);
+      transform:translateY(-3px);
+    }
+    .to-top svg{
+      width:26px;
+      height:26px;
+      stroke:var(--gold-light);
+      stroke-width:1.5;
+      stroke-linecap:round;
+      stroke-linejoin:round;
+      fill:none;
+      filter:drop-shadow(0 0 4px rgba(232,199,102,.4));
+    }
+    .to-top:hover svg{
+      filter:drop-shadow(0 0 8px rgba(232,199,102,.7));
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ============ ШАПКА ============ -->
+  <header>
+    <div class="header-inner">
+      <a class="logo" href="index.html" aria-label="Натали Мадам — на главную">
+        <span class="logo-script">nataly-madam.ru</span>
+        <span class="logo-sub">Последний романтик</span>
+      </a>
+      <button class="burger" aria-label="Открыть меню" aria-expanded="false" onclick="document.getElementById('menu').classList.toggle('open')">
+        <span></span><span></span><span></span>
+      </button>
+      <nav aria-label="Основная навигация">
+        <ul id="menu">
+          <li><a href="about.html">Об авторе</a></li>
+          <li><a href="novels.html">Романы</a></li>
+          <li><a href="stories.html">Рассказы</a></li>
+          <li><a href="dali/dali.html">Притчи Дали</a></li>
+          <li><a href="reticule/reticule.html">Ридикюль</a></li>
+          <li><a href="tais/tais.html">Женский тренинг</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ============ ХЛЕБНЫЕ КРОШКИ ============ -->
+  <nav class="lw-breadcrumbs">
+    <a href="index.html">Главная</a>
+    <span style="color:#a9c4c2;">→</span>
+    <span style="color:#5b6b6a;">Политика конфиденциальности</span>
+  </nav>
+
+  <!-- ============ КОНТЕНТ ПОЛИТИКИ ============ -->
+  <main class="lw-content">
+    <h1>Политика конфиденциальности</h1>
+
+    <p>Настоящая Политика конфиденциальности (далее — <strong>«Политика»</strong>) определяет порядок обработки и защиты персональных данных пользователей сайта <a href="https://nataly-madam.ru">nataly-madam.ru</a> (далее — <strong>«Сайт»</strong>), владельцем которого является <strong>Натали Мадам</strong> (творческий псевдоним), далее — <strong>«Оператор»</strong>.</p>
+
+    <h2>1. Общие положения</h2>
+    <p><strong>1.1.</strong> Политика разработана в соответствии с требованиями Федерального закона от 27.07.2006 № 152-ФЗ «О персональных данных» и других нормативных актов РФ.</p>
+    <p><strong>1.2.</strong> Использование Сайта означает безоговорочное согласие Пользователя с настоящей Политикой и указанными в ней условиями обработки его персональной информации.</p>
+    <p><strong>1.3.</strong> В случае несогласия с условиями Политики Пользователь должен прекратить использование Сайта.</p>
+
+    <h2>2. Основные понятия</h2>
+    <p>В настоящей Политике используются следующие понятия:</p>
+    <ul>
+      <li><strong>Персональные данные</strong> — любая информация, относящаяся к прямо или косвенно определенному или определяемому физическому лицу (субъекту персональных данных).</li>
+      <li><strong>Обработка персональных данных</strong> — любое действие (операция) или совокупность действий с персональными данными, включая сбор, запись, систематизацию, накопление, хранение, уточнение, извлечение, использование, передачу, обезличивание, блокирование, удаление, уничтожение.</li>
+      <li><strong>Конфиденциальность персональных данных</strong> — обязательное для соблюдения Оператором или иным получившим доступ к персональным данным лицом требование не допускать их распространения без согласия субъекта персональных данных или наличия иного законного основания.</li>
+    </ul>
+
+    <h2>3. Персональные данные, которые мы собираем</h2>
+    <p>Оператор может собирать следующие категории данных:</p>
+    <ul>
+      <li>Данные, предоставляемые Пользователем добровольно: имя, фамилия, адрес электронной почты, никнейм в Telegram, номер телефона (при оформлении заказа).</li>
+      <li>Данные, собираемые автоматически: IP-адрес, данные файлов cookie, информация о браузере и устройстве, время доступа, адреса запрашиваемых страниц.</li>
+    </ul>
+
+    <h2>4. Цели сбора и обработки персональных данных</h2>
+    <p>Оператор обрабатывает данные Пользователя в следующих целях:</p>
+    <ol>
+      <li>Идентификация Пользователя для оформления заказов на книги и регистрации на мастер-классы.</li>
+      <li>Связь с Пользователем: отправка уведомлений о статусе заказа, ссылок на доступ к контенту, ответов на запросы.</li>
+      <li>Обработка платежей и соблюдение налогового законодательства (формирование чеков в приложении «Мой налог»).</li>
+      <li>Направление информационных и рекламных рассылок (только при наличии отдельного согласия Пользователя).</li>
+      <li>Улучшение работы Сайта, анализ аудитории и исправление технических ошибок.</li>
+    </ol>
+
+    <h2>5. Правовые основания обработки</h2>
+    <p>Оператор обрабатывает персональные данные на следующих основаниях:</p>
+    <ul>
+      <li>Согласие Пользователя (выражается путем заполнения форм на Сайте).</li>
+      <li>Исполнение договора, стороной которого является Пользователь (публичная оферта на оказание услуг или продажу книг).</li>
+      <li>Выполнение функций, полномочий и обязанностей, возложенных законодательством РФ на Оператора (налоговая отчетность).</li>
+    </ul>
+
+    <h2>6. Порядок и условия обработки</h2>
+    <p><strong>6.1.</strong> Безопасность персональных данных обеспечивается путем принятия правовых, организационных и технических мер, необходимых для выполнения в полном объеме требований действующего законодательства в области защиты персональных данных.</p>
+    <p><strong>6.2.</strong> Оператор обеспечивает сохранность персональных данных и принимает все возможные меры для исключения доступа к данным неуполномоченных лиц.</p>
+    <p><strong>6.3.</strong> Срок обработки персональных данных является неограниченным. Пользователь может в любой момент отозвать свое согласие, направив Оператору уведомление на адрес электронной почты <a href="mailto:natalymadam@yandex.ru">natalymadam@yandex.ru</a> с пометкой «Отзыв согласия на обработку персональных данных».</p>
+    <p><strong>6.4.</strong> Оператор не передает персональные данные третьим лицам, за исключением случаев, связанных с исполнением законодательства РФ (передача данных в платежные системы и в Федеральную налоговую службу).</p>
+    <p><strong>6.5.</strong> Хранение данных осуществляется на территории Российской Федерации. Трансграничная передача данных не производится.</p>
+
+    <h2>7. Использование файлов Cookie</h2>
+    <p><strong>7.1.</strong> Сайт использует файлы cookie для обеспечения корректной работы корзины, сохранения настроек пользователя и сбора статистики посещений (через Яндекс.Метрику или Google Analytics).</p>
+    <p><strong>7.2.</strong> Пользователь может самостоятельно отключить cookie в настройках своего браузера. В этом случае некоторые функции Сайта могут работать некорректно.</p>
+
+    <h2>8. Защита персональных данных</h2>
+    <p>Оператор принимает необходимые и достаточные организационные и технические меры для защиты персональной информации Пользователя от неправомерного или случайного доступа, уничтожения, изменения, блокирования, копирования, распространения, а также от иных неправомерных действий с ней третьих лиц.</p>
+
+    <h2>9. Заключительные положения</h2>
+    <p><strong>9.1.</strong> Пользователь может получить любые разъяснения по интересующим вопросам, касающимся обработки его персональных данных, обратившись к Оператору по электронной почте <a href="mailto:natalymadam@yandex.ru">natalymadam@yandex.ru</a>.</p>
+    <p><strong>9.2.</strong> В данном документе будут отражены любые изменения политики обработки персональных данных Оператором. Политика действует бессрочно до замены ее новой версией.</p>
+    <p><strong>9.3.</strong> Актуальная версия Политики в свободном доступе расположена в сети Интернет по адресу: <a href="https://nataly-madam.ru/privacy.html">https://nataly-madam.ru/privacy.html</a>.</p>
+  </main>
+
+<br><br>
+
+  <!-- ============ ПОДВАЛ ============ -->
+  <footer>
+    <div class="footer-inner">
+      <a href="index.html" class="footer-logo" aria-label="nataly-madam.ru — на главную">nataly-madam.ru</a>
+      <p class="footer-copy">
+        Натали Мадам — персональный сайт писательницы<br>
+        © <span id="currentYear"></span>. Все права защищены
+      </p>
+      <div class="footer-legal">
+        <a href="privacy.html">Политика конфиденциальности</a>
+        <a href="soglasie.html">Согласие на обработку данных</a>
+        <a href="terms.html">Пользовательское соглашение</a>
+        <a href="offer.html">Публичная оферта</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============ КНОПКА «НАВЕРХ» ============ -->
+  <button class="to-top" id="toTop" aria-label="Наверх" type="button">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <path d="M12 19V5" />
+      <path d="M5 12l7-7 7 7" />
+    </svg>
+  </button>
+
+  <script>
+    /* Год в подвале */
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+    /* Меню-бургер */
+    document.querySelectorAll('#menu a').forEach(function(a){
+      a.addEventListener('click', function(){
+        document.getElementById('menu').classList.remove('open');
+      });
+    });
+
+    /* Кнопка «Наверх» */
+    (function(){
+      var btn = document.getElementById('toTop');
+      if (!btn) return;
+
+      function checkScroll(){
+        if (window.scrollY > 400) {
+          btn.classList.add('is-visible');
+        } else {
+          btn.classList.remove('is-visible');
+        }
+      }
+
+      window.addEventListener('scroll', checkScroll, { passive: true });
+      checkScroll();
+
+      btn.addEventListener('click', function(){
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+    })();
+  </script>
+</body>
+</html>'''
+
+print(html_content)
